@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prinseyy — Photography, Film &amp; Code</title>
-<meta name="description" content="Editor Prinseyy — photography, video editing and filmmaking from Dubai, UAE.">
-<meta name="theme-color" content="#EEF0EA">
+<title>Prinseyy — Photography, Film &amp; Digital Work</title>
+<meta name="description" content="Prinseyy — a Dubai-based portfolio spanning photography, film, video editing and digital work.">
+<meta name="theme-color" content="#ECEDE6">
+<meta property="og:title" content="Prinseyy — Photography, Film & Digital Work">
+<meta property="og:description" content="Selected frames, edits and digital work from Dubai, UAE.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/photos/golden-hour.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +17,18 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<div class="grain" aria-hidden="true"></div>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="site-nav">
-  <div class="wrap">
-    <a class="wordmark" href="#top">Prins<em>eyy</em></a>
+<nav class="site-nav" aria-label="Primary navigation">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="#top" aria-label="Prinseyy home">Prins<em>eyy</em></a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
     <div class="nav-links" id="navLinks">
-      <a href="#work">Work</a>
+      <a href="#work">Frames</a>
       <a href="#film">Film</a>
-      <a href="#code">Code</a>
+      <a href="#code">Projects</a>
+      <a href="#latest">Latest</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
@@ -31,262 +36,144 @@
 </nav>
 
 <main id="main">
-
   <header class="hero" id="top">
-    <div class="wrap">
+    <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Photography &middot; Film &middot; Code</p>
-        <h1>Catching Dubai's <span class="accent">last light</span>, one frame at a time.</h1>
-        <p class="hero-tagline">I'm Prinseyy — I shoot stills, cut video, and build the occasional interactive thing on the side.</p>
-        <div class="hero-meta">
-          <div><strong>Based</strong>Dubai, UAE</div>
-          <div><strong>Shoots</strong>Photo &amp; Video</div>
-          <div><strong>Status</strong>Open to collab</div>
+        <p class="eyebrow">Photography · Film · Digital</p>
+        <h1>Stories in <span class="accent">light, motion</span> and code.</h1>
+        <p class="hero-tagline">I'm Prinseyy — a Dubai-based creative making stills, edits, films and digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#latest">See latest work <span>↘</span></a>
+          <a class="text-link" href="#contact">Start a collaboration →</a>
+        </div>
+        <div class="hero-meta" id="heroStats" aria-label="Portfolio counts">
+          <div><strong>—</strong><span>Frames</span></div>
+          <div><strong>—</strong><span>Cuts</span></div>
+          <div><strong>—</strong><span>Builds</span></div>
+          <div><strong>—</strong><span>Updates</span></div>
         </div>
       </div>
       <figure class="hero-frame">
-        <img src="assets/photos/golden-hour.jpg" alt="Silhouetted palm tree on a Dubai beach at golden hour" width="1800" height="1350">
-        <figcaption><span>Frame 00 — Cover</span><span>Golden Hour</span></figcaption>
+        <div class="hero-image-wrap">
+          <img id="heroImage" src="assets/photos/golden-hour.jpg" alt="Silhouetted palm tree on a Dubai beach at golden hour" width="1800" height="1350">
+          <span class="hero-badge">Selected frame</span>
+        </div>
+        <figcaption><span>Frame 00 — Cover</span><span id="heroLabel">Golden Hour</span></figcaption>
       </figure>
+    </div>
+    <div class="wrap marquee" aria-hidden="true">
+      <span>Dubai, UAE</span><i>✦</i><span>Photography</span><i>✦</i><span>Film &amp; Editing</span><i>✦</i><span>Web &amp; Digital</span>
     </div>
   </header>
 
   <section id="work">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Proof Sheet — 8 Frames</p>
-        <h2>Recent frames</h2>
-        <p>A small selection shot around Dubai's coastline — golden hour, open water, last light.</p>
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow" id="photoCount">Proof Sheet</p>
+          <h2>Recent frames</h2>
+        </div>
+        <p>A living proof sheet of scenes, details and light gathered around Dubai and wherever the camera goes next.</p>
       </div>
-
-      <div class="proof-grid">
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/golden-hour.jpg" alt="Palm silhouette on the beach as the sun sets" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 01</span><span class="title">Golden Hour</span></div>
-        </figure>
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/open-water.jpg" alt="Calm sea horizon under a pale sky" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 02</span><span class="title">Open Water</span></div>
-        </figure>
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/palm-silhouette.jpg" alt="Tall silhouette of a palm tree against a dusk sky over water" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 03</span><span class="title">Palm Silhouette</span></div>
-        </figure>
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/glass-and-palms.jpg" alt="Looking up through a glass atrium roof at palm trees" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 04</span><span class="title">Glass &amp; Palms</span></div>
-        </figure>
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/dusk-skies.jpg" alt="Pastel dusk sky over a line of trees" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 05</span><span class="title">Dusk Skies</span></div>
-        </figure>
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/sandwritten.jpg" alt="Word written by hand in beach sand" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 06</span><span class="title">Sandwritten</span></div>
-        </figure>
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/blossom-blue.jpg" alt="White blossoms on a tree against a clear blue sky" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 07</span><span class="title">Blossom &amp; Blue</span></div>
-        </figure>
-
-        <figure class="frame">
-          <div class="shot"><img src="assets/photos/coastal-wide.jpg" alt="Wide view of the Dubai coastline in daylight" loading="lazy"></div>
-          <div class="frame-caption"><span class="num">Frame 08</span><span class="title">Coastal Wide</span></div>
-        </figure>
-
-        <div class="blank-frame">Frame 09<br>— skipped —</div>
-
-      </div>
+      <div class="proof-grid" id="proofGrid" aria-live="polite"></div>
     </div>
   </section>
 
-  <section id="film">
+  <section id="film" class="section-tint">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Reel</p>
-        <h2>Edits &amp; experiments</h2>
-        <p>A mix of edits — some for projects, some just for the fun of it.</p>
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow teal" id="filmCount">Reel</p>
+          <h2>Edits &amp; motion</h2>
+        </div>
+        <p>Short edits, filmmaking exercises, visual experiments and finished cuts.</p>
       </div>
-
-      <div class="reel">
-
-        <article class="cut">
-          <div class="screen">
-            <iframe src="https://drive.google.com/file/d/1dCVsN5u4b2lstu2yS3fQvaVa1fvI0UCF/preview" allow="autoplay" loading="lazy" title="Fighting Gold But Meta"></iframe>
-          </div>
-          <div class="cut-caption"><span class="num">Cut 01</span><span class="title">Fighting Gold But Meta</span></div>
-          <p class="cut-desc">Short edit built around fast cuts and motion.</p>
-        </article>
-
-        <article class="cut">
-          <div class="screen">
-            <iframe src="https://drive.google.com/file/d/1sbc6ElpePeexXKCALR7cKEg2RA2eZOvk/preview" allow="autoplay" loading="lazy" title="Filipino Project — Final Cut"></iframe>
-          </div>
-          <div class="cut-caption"><span class="num">Cut 02</span><span class="title">Filipino Project — Final Cut</span></div>
-          <p class="cut-desc">Final cut for a class filmmaking project.</p>
-        </article>
-
-        <article class="cut">
-          <div class="screen">
-            <video controls preload="metadata" playsinline>
-              <source src="assets/videos/tom-cruise-edit.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="cut-caption"><span class="num">Cut 03</span><span class="title">Tom Cruise Edit</span></div>
-          <p class="cut-desc">Fan edit, cut for pace and punch.</p>
-        </article>
-
-        <article class="cut">
-          <div class="screen">
-            <iframe src="https://drive.google.com/file/d/1ILAAxO3DypBn_ZSCxQSut__HpNeO5iA_/preview" allow="autoplay" loading="lazy" title="Metaverse Server Teaser"></iframe>
-          </div>
-          <div class="cut-caption"><span class="num">Cut 04</span><span class="title">Metaverse Server Teaser</span></div>
-          <p class="cut-desc">Teaser edit for a community game server.</p>
-        </article>
-
-        <article class="cut">
-          <div class="screen">
-            <video controls preload="metadata" playsinline>
-              <source src="assets/videos/green-screen-test.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="cut-caption"><span class="num">Cut 05</span><span class="title">Green Screen Test</span></div>
-          <p class="cut-desc">First pass at a chroma-key composite.</p>
-        </article>
-
-      </div>
+      <div class="reel" id="reel" aria-live="polite"></div>
     </div>
   </section>
 
   <section id="code">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Build Log — 1 Project</p>
-        <h2>Things I've built</h2>
-        <p>Just one so far — a front-end build for a local business. More to come.</p>
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow teal" id="projectCount">Build Log</p>
+          <h2>Digital work</h2>
+        </div>
+        <p>Selected websites, apps and interactive builds — from idea to published experience.</p>
       </div>
-
-      <article class="build-card">
-        <div class="build-main">
-          <span class="num">Build 01</span>
-          <h3>Sibs Style Beauty Lounge</h3>
-          <p>A front-end site for a skincare and beauty lounge, built with plain HTML, CSS, and JavaScript and deployed on Render.</p>
-          <a class="build-link" href="https://sibs-style-beauty-lounge.onrender.com/" target="_blank" rel="noopener">View live site &rarr;</a>
-        </div>
-        <div class="build-meta">
-          <div><span class="label">Stack</span>HTML &middot; CSS &middot; JavaScript</div>
-          <div><span class="label">Hosted</span>Render</div>
-          <div><span class="label">Type</span>Business site</div>
-        </div>
-      </article>
+      <div class="build-list" id="buildList" aria-live="polite"></div>
     </div>
   </section>
 
-  <section id="about">
+  <section id="latest" class="latest-section">
+    <div class="wrap">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow" id="postCount">Studio Log</p>
+          <h2>Latest work</h2>
+        </div>
+        <p>New websites, finished edits, photo sets, experiments and project launches — added as they happen.</p>
+      </div>
+      <div class="post-grid" id="postGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
     <div class="wrap">
       <div class="about-grid">
-      <div class="about-bio">
-        <p class="eyebrow">About</p>
-        <h2>Prinse Katigbak</h2>
-        <p style="margin-top:24px;">Most people know me as <strong>Prinseyy</strong>. I'm based in Dubai, where I spend a lot of time chasing whatever light is good that day — usually early morning or just before sunset.</p>
-        <p>Photography came first, video editing followed once I wanted my photos to move. Filmmaking and coding are the two sides I work on when I'm not behind a camera — one tells a longer story, the other just likes solving small problems.</p>
-      </div>
-      <div class="about-coords">
-        <span class="big">25.20&deg; N, 55.27&deg; E</span>
-        Dubai, United Arab Emirates<br>
-        Shooting mostly along the coast, usually within an hour of sunrise or sunset.
-      </div>
+        <div class="about-bio">
+          <p class="eyebrow">About</p>
+          <h2>Prinse Katigbak</h2>
+          <p>Most people know me as <strong>Prinseyy</strong>. I'm based in Dubai, where I spend a lot of time chasing whatever light is good that day — usually early morning or just before sunset.</p>
+          <p>Photography came first. Video followed when I wanted still images to move, and coding became another way to turn ideas into something people can actually use.</p>
+        </div>
+        <aside class="about-card">
+          <span class="about-index">25.20° N, 55.27° E</span>
+          <h3>Dubai, United Arab Emirates</h3>
+          <p>Available for selected creative collaborations, digital projects and visual work.</p>
+          <a href="#contact">Get in touch →</a>
+        </aside>
       </div>
 
       <div class="skills-block">
-      <p class="eyebrow">Core Skills</p>
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <span class="skill-label">Web</span>
-          <p>HTML5, CSS3, JavaScript (ES6+), React.js, REST APIs, MongoDB, Responsive Design</p>
+        <p class="eyebrow">Toolkit</p>
+        <div class="skills-grid">
+          <div class="skill-card"><span class="skill-label">Web</span><p>HTML5, CSS3, JavaScript, React.js, REST APIs, MongoDB, Responsive Design</p></div>
+          <div class="skill-card"><span class="skill-label">Mobile &amp; Game</span><p>Android Studio, Kotlin, Unity 2D, C#</p></div>
+          <div class="skill-card"><span class="skill-label">Languages</span><p>JavaScript, Kotlin, C#, Python</p></div>
+          <div class="skill-card"><span class="skill-label">Tools</span><p>Git, GitHub, VS Code</p></div>
+          <div class="skill-card"><span class="skill-label">Media</span><p>Adobe Premiere Pro, Adobe Illustrator, Photography, Videography</p></div>
+          <div class="skill-card"><span class="skill-label">Approach</span><p>Problem Solving, Collaboration, Client Communication, Project Planning</p></div>
         </div>
-
-        <div class="skill-card">
-          <span class="skill-label">Mobile &amp; Game</span>
-          <p><strong>Android:</strong> Android Studio, Kotlin<br><strong>Game:</strong> Unity 2D, C#</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-label">Languages</span>
-          <p>JavaScript, Kotlin, C#, Python (Basic)</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-label">Tools</span>
-          <p>Git, GitHub, VS Code</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-label">Media</span>
-          <p>Adobe Premiere Pro, Adobe Illustrator, Photography, Videography</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-label">Soft Skills</span>
-          <p>Problem Solving, Team Collaboration, Client Communication, Project Planning</p>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact-section">
     <div class="wrap">
+      <div class="contact-kicker">Have something in mind?</div>
       <div class="contact-head">
         <p class="eyebrow">Contact</p>
-        <h2>Let's make something.</h2>
+        <h2>Let's make something <em>worth seeing.</em></h2>
       </div>
       <ul class="contact-list">
-        <li>
-          <a href="mailto:prinseandrewkatigbak@gmail.com">
-            <span class="label">Email</span>
-            <span class="value">prinseandrewkatigbak@gmail.com</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/prinseyy18" target="_blank" rel="noopener">
-            <span class="label">Instagram</span>
-            <span class="value">@prinseyy18</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://facebook.com/prinseandrewkatigbak" target="_blank" rel="noopener">
-            <span class="label">Facebook</span>
-            <span class="value">Prinse Andrew Santos Katigbak</span>
-          </a>
-        </li>
-        <li>
-          <a href="tel:+971554864452">
-            <span class="label">Mobile</span>
-            <span class="value">+971 55 486 4452</span>
-          </a>
-        </li>
+        <li><a href="mailto:prinseandrewkatigbak@gmail.com"><span class="label">Email</span><span class="value">prinseandrewkatigbak@gmail.com</span><span class="arrow">↗</span></a></li>
+        <li><a href="https://instagram.com/prinseyy18" target="_blank" rel="noopener"><span class="label">Instagram</span><span class="value">@prinseyy18</span><span class="arrow">↗</span></a></li>
+        <li><a href="https://facebook.com/prinseandrewkatigbak" target="_blank" rel="noopener"><span class="label">Facebook</span><span class="value">Prinse Andrew Santos Katigbak</span><span class="arrow">↗</span></a></li>
+        <li><a href="tel:+971554864452"><span class="label">Mobile</span><span class="value">+971 55 486 4452</span><span class="arrow">↗</span></a></li>
       </ul>
     </div>
   </section>
-
 </main>
 
 <footer>
-  <div class="wrap">
-    <span>&copy; <span id="year"></span> Prinseyy. All rights reserved.</span>
-    <span>Dubai, UAE</span>
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Prinseyy. All rights reserved.</span>
+    <span>Designed as a living portfolio · Dubai, UAE</span>
   </div>
 </footer>
 
+<noscript><p class="load-error">This portfolio needs JavaScript enabled to display its content.</p></noscript>
 <script src="script.js"></script>
 </body>
 </html>

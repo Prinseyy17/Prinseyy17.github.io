@@ -1,0 +1,271 @@
+{
+  "site": {
+    "hero": {
+      "image": "assets/photos/golden-hour.jpg",
+      "alt": "Silhouetted palm tree on a Dubai beach at golden hour",
+      "label": "Golden Hour"
+    }
+  },
+  "photography": [
+    {
+      "id": "golden-hour",
+      "title": "Golden Hour",
+      "image": "assets/photos/golden-hour.jpg",
+      "alt": "Palm silhouette on the beach as the sun sets",
+      "layout": "wide",
+      "published": true
+    },
+    {
+      "id": "open-water",
+      "title": "Open Water",
+      "image": "assets/photos/open-water.jpg",
+      "alt": "Calm sea horizon under a pale sky",
+      "layout": "wide",
+      "published": true
+    },
+    {
+      "id": "palm-silhouette",
+      "title": "Palm Silhouette",
+      "image": "assets/photos/palm-silhouette.jpg",
+      "alt": "Tall silhouette of a palm tree against a dusk sky over water",
+      "layout": "tall",
+      "published": true
+    },
+    {
+      "id": "glass-and-palms",
+      "title": "Glass & Palms",
+      "image": "assets/photos/glass-and-palms.jpg",
+      "alt": "Looking up through a glass atrium roof at palm trees",
+      "layout": "tall",
+      "published": true
+    },
+    {
+      "id": "dusk-skies",
+      "title": "Dusk Skies",
+      "image": "assets/photos/dusk-skies.jpg",
+      "alt": "Pastel dusk sky over a line of trees",
+      "layout": "wide",
+      "published": true
+    },
+    {
+      "id": "sandwritten",
+      "title": "Sandwritten",
+      "image": "assets/photos/sandwritten.jpg",
+      "alt": "Word written by hand in beach sand",
+      "layout": "standard",
+      "published": true
+    },
+    {
+      "id": "blossom-blue",
+      "title": "Blossom & Blue",
+      "image": "assets/photos/blossom-blue.jpg",
+      "alt": "White blossoms on a tree against a clear blue sky",
+      "layout": "standard",
+      "published": true
+    },
+    {
+      "id": "coastal-wide",
+      "title": "Coastal Wide",
+      "image": "assets/photos/coastal-wide.jpg",
+      "alt": "Wide view of the Dubai coastline in daylight",
+      "layout": "wide",
+      "published": true
+    }
+  ],
+  "film": [
+    {
+      "id": "fighting-gold-meta",
+      "title": "Fighting Gold But Meta",
+      "description": "Short edit built around fast cuts and motion.",
+      "sourceType": "embed",
+      "source": "https://drive.google.com/file/d/1dCVsN5u4b2lstu2yS3fQvaVa1fvI0UCF/preview",
+      "published": true
+    },
+    {
+      "id": "filipino-project-final",
+      "title": "Filipino Project — Final Cut",
+      "description": "Final cut for a class filmmaking project.",
+      "sourceType": "embed",
+      "source": "https://drive.google.com/file/d/1sbc6ElpePeexXKCALR7cKEg2RA2eZOvk/preview",
+      "published": true
+    },
+    {
+      "id": "tom-cruise-edit",
+      "title": "Tom Cruise Edit",
+      "description": "Fan edit, cut for pace and punch.",
+      "sourceType": "video",
+      "source": "assets/videos/tom-cruise-edit.mp4",
+      "published": true
+    },
+    {
+      "id": "metaverse-server-teaser",
+      "title": "Metaverse Server Teaser",
+      "description": "Teaser edit for a community game server.",
+      "sourceType": "embed",
+      "source": "https://drive.google.com/file/d/1ILAAxO3DypBn_ZSCxQSut__HpNeO5iA_/preview",
+      "published": true
+    },
+    {
+      "id": "green-screen-test",
+      "title": "Green Screen Test",
+      "description": "First pass at a chroma-key composite.",
+      "sourceType": "video",
+      "source": "assets/videos/green-screen-test.mp4",
+      "published": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "elementesse",
+      "title": "Elementesse",
+      "description": "A budget-focused e-commerce website built from the ground up, combining custom HTML, CSS and JavaScript with WordPress and WooCommerce. The storefront is structured for clear product discovery, straightforward shopping and value-conscious customers. Developed for and property of Rayd Trading LLC.",
+      "url": "https://elementesse.net/",
+      "linkLabel": "Visit Elementesse",
+      "sourceUrl": "",
+      "stack": "HTML · CSS · JavaScript · WordPress · WooCommerce",
+      "hosted": "WordPress / WooCommerce",
+      "type": "E-commerce Website",
+      "status": "Live",
+      "role": "Ground-up design & development",
+      "ownership": "Rayd Trading LLC",
+      "credit": "",
+      "coverImage": "",
+      "published": true
+    },
+    {
+      "id": "the-jewels-store",
+      "title": "The Jewels Store",
+      "description": "A luxury e-commerce website redesigned and refined in WordPress with WooCommerce, with improved structure, presentation and shopping flow aimed at a more premium customer experience. Property of Rayd Trading LLC and managed by Prinse Andrew Katigbak.",
+      "url": "https://thejewelsstore.com/",
+      "linkLabel": "Visit The Jewels Store",
+      "sourceUrl": "",
+      "stack": "WordPress · WooCommerce",
+      "hosted": "WordPress / WooCommerce",
+      "type": "Luxury E-commerce Website",
+      "status": "Live",
+      "role": "Redesign · content direction · management",
+      "ownership": "Rayd Trading LLC",
+      "credit": "Managed by Prinse Andrew Katigbak",
+      "coverImage": "",
+      "published": true
+    },
+    {
+      "id": "albarajeel-99",
+      "title": "Al Barajeel 99",
+      "description": "A business-profile website currently in development. The original base was coded by co-developer Christian James Dejolde; my contribution focuses on backend work and the visual presentation of the business profile as the project is developed further.",
+      "url": "https://albarajeel99.netlify.app/",
+      "linkLabel": "View development build",
+      "sourceUrl": "",
+      "stack": "",
+      "hosted": "Netlify",
+      "type": "Business Profile Website",
+      "status": "In Development",
+      "role": "Backend · visual development",
+      "ownership": "",
+      "credit": "Base code by Christian James Dejolde",
+      "coverImage": "",
+      "published": true
+    },
+    {
+      "id": "sibs-style-beauty-lounge",
+      "title": "Sibs Style Beauty Lounge",
+      "description": "A responsive front-end website for a skincare and beauty lounge, designed to present services clearly and turn visitors into enquiries.",
+      "url": "https://sibs-style-beauty-lounge.onrender.com/",
+      "linkLabel": "View live site",
+      "sourceUrl": "",
+      "stack": "HTML · CSS · JavaScript",
+      "hosted": "Render",
+      "type": "Business Website",
+      "coverImage": "",
+      "published": true
+    }
+  ],
+  "posts": [
+    {
+      "id": "elementesse-launch",
+      "type": "Website Launch",
+      "title": "Elementesse — built from the ground up",
+      "excerpt": "A budget-focused WooCommerce storefront built with custom HTML, CSS and JavaScript around WordPress, created for Rayd Trading LLC and optimized for clear, value-conscious shopping.",
+      "date": "2026-08-21",
+      "coverImage": "",
+      "url": "https://elementesse.net/",
+      "linkLabel": "Visit Elementesse",
+      "tags": [
+        "E-commerce",
+        "WordPress",
+        "WooCommerce",
+        "HTML/CSS/JS",
+        "Rayd Trading LLC"
+      ],
+      "published": true
+    },
+    {
+      "id": "the-jewels-store-redesign",
+      "type": "Website Redesign",
+      "title": "The Jewels Store — redesigned for luxury",
+      "excerpt": "A WordPress and WooCommerce redesign focused on a more refined luxury presentation, stronger structure and a premium shopping experience. Property of Rayd Trading LLC and managed by Prinse Andrew Katigbak.",
+      "date": "2026-08-21",
+      "coverImage": "",
+      "url": "https://thejewelsstore.com/",
+      "linkLabel": "Visit The Jewels Store",
+      "tags": [
+        "Luxury",
+        "E-commerce",
+        "WordPress",
+        "WooCommerce",
+        "Redesign"
+      ],
+      "published": true
+    },
+    {
+      "id": "albarajeel-99-development",
+      "type": "In Development",
+      "title": "Al Barajeel 99 — development in progress",
+      "excerpt": "A business-profile build in active development. The base code was created by co-developer Christian James Dejolde, with my contribution focused on backend work and the visual direction of the business profile.",
+      "date": "2026-08-21",
+      "coverImage": "",
+      "url": "https://albarajeel99.netlify.app/",
+      "linkLabel": "View development build",
+      "tags": [
+        "Development",
+        "Backend",
+        "Visual Design",
+        "Netlify",
+        "Collaboration"
+      ],
+      "published": true
+    },
+    {
+      "id": "sibs-style-launch",
+      "type": "Website",
+      "title": "Sibs Style Beauty Lounge — live build",
+      "excerpt": "A clean, responsive beauty-lounge website built in vanilla HTML, CSS and JavaScript and published on Render.",
+      "date": "",
+      "coverImage": "",
+      "url": "https://sibs-style-beauty-lounge.onrender.com/",
+      "linkLabel": "Open website",
+      "tags": [
+        "Web Design",
+        "Front-end",
+        "Launch"
+      ],
+      "published": true
+    },
+    {
+      "id": "golden-hour-series",
+      "type": "Photography",
+      "title": "Golden hour along the coast",
+      "excerpt": "A small set built around warm silhouettes, open water and the last minutes of daylight.",
+      "date": "",
+      "coverImage": "assets/photos/golden-hour.jpg",
+      "url": "#work",
+      "linkLabel": "View frames",
+      "tags": [
+        "Dubai",
+        "Photography",
+        "Golden Hour"
+      ],
+      "published": true
+    }
+  ]
+}
