@@ -1,179 +1,749 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prinseyy — Photography, Film &amp; Digital Work</title>
-<meta name="description" content="Prinseyy — a Dubai-based portfolio spanning photography, film, video editing and digital work.">
+<title>Prinseyy — Posters, Websites, Photography &amp; Film · Dubai</title>
+<meta name="description" content="Prinse Andrew Katigbak (Prinseyy) — a Dubai-based creative working across poster design, websites, photography and film.">
 <meta name="theme-color" content="#ECEDE6">
-<meta property="og:title" content="Prinseyy — Photography, Film & Digital Work">
-<meta property="og:description" content="Selected frames, edits and digital work from Dubai, UAE.">
+<link rel="canonical" href="https://prinseyy17.github.io/">
+
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/photos/golden-hour.jpg">
+<meta property="og:url" content="https://prinseyy17.github.io/">
+<meta property="og:title" content="Prinseyy — Stories in light, motion and code.">
+<meta property="og:description" content="Poster design, websites, photography and film from Dubai, UAE.">
+<meta property="og:image" content="https://prinseyy17.github.io/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200..800;1,9..144,200..800&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/photos/golden-hour.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className = 'js';</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prinse Andrew Katigbak",
+  "alternateName": "Prinseyy",
+  "url": "https://prinseyy17.github.io/",
+  "image": "https://prinseyy17.github.io/assets/img/portrait.webp",
+  "jobTitle": "Creative — poster design, web, photography and film",
+  "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+  "sameAs": ["https://instagram.com/prinseyy18", "https://www.instagram.com/yeetmanjones17/", "https://facebook.com/prinseandrewkatigbak", "https://github.com/Prinseyy17"]
+}
+</script>
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="site-nav" aria-label="Primary navigation">
-  <div class="wrap nav-inner">
-    <a class="wordmark" href="#top" aria-label="Prinseyy home">Prins<em>eyy</em></a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
-    <div class="nav-links" id="navLinks">
-      <a href="#work">Frames</a>
-      <a href="#film">Film</a>
-      <a href="#code">Projects</a>
-      <a href="#latest">Latest</a>
+<!-- Preloader (only on the first visit of a session) -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__meta"><span>Portfolio — 2026</span><span>Dubai, UAE · 25.20° N, 55.27° E</span></div>
+  <div class="preloader__mark"><span class="pl-word">Prins</span><em class="pl-word">eyy</em></div>
+  <div class="preloader__foot"><span>Loading frames, cuts &amp; builds</span><span class="preloader__count" id="preloaderCount">000</span></div>
+</div>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="wordmark" href="#top" aria-label="Prinseyy — back to top">Prins<em>eyy</em></a>
+    <nav class="nav__links" aria-label="Primary">
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#posters">Posters</a>
+      <a href="#reallux">Real Lux</a>
+      <a href="#websites">Websites</a>
+      <a href="#frames">Frames</a>
+      <a href="#reel">Reel</a>
+    </nav>
+    <div class="nav__right">
+      <span class="nav__clock" title="Local time in Dubai"><span class="live-dot" aria-hidden="true"></span>DXB <time data-clock>--:--</time></span>
+      <a class="btn btn--small nav__cta" href="#contact" data-magnetic>Let’s talk <span aria-hidden="true">↗</span></a>
+      <button class="nav__toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav__toggle-lines" aria-hidden="true"><i></i><i></i></span>
+        <span class="nav__toggle-label">Menu</span>
+      </button>
     </div>
   </div>
-</nav>
+</header>
 
-<main id="main">
-  <header class="hero" id="top">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Photography · Film · Digital</p>
-        <h1>Stories in <span class="accent">light, motion</span> and code.</h1>
-        <p class="hero-tagline">I'm Prinseyy — a Dubai-based creative making stills, edits, films and digital experiences.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#latest">See latest work <span>↘</span></a>
-          <a class="text-link" href="#contact">Start a collaboration →</a>
+<!-- Mobile menu -->
+<div class="menu" id="menu" inert aria-hidden="true">
+  <nav class="menu__links" aria-label="Mobile">
+    <a href="#about" style="--i:0"><small>00</small>About</a>
+    <a href="#posters" style="--i:1"><small>01</small>Posters</a>
+    <a href="#reallux" style="--i:2"><small>02</small>Real Lux</a>
+    <a href="#websites" style="--i:3"><small>03</small>Websites</a>
+    <a href="#frames" style="--i:4"><small>04</small>Frames</a>
+    <a href="#reel" style="--i:5"><small>05</small>Reel</a>
+    <a href="#contact" style="--i:6"><small>—</small>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="mailto:prinseandrewkatigbak@gmail.com">prinseandrewkatigbak@gmail.com</a>
+    <span>Dubai · <time data-clock>--:--</time> GST</span>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" data-chapter>
+    <div class="hero__rings" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow" data-reveal style="--d:.05s">Portfolio — 2026</p>
+        <h1 class="hero__title">
+          <span class="hero__mark" data-split>Prins<em>eyy</em></span>
+          <span class="hero__tag" data-split style="--d0:.25s">Stories in <em>light,</em> <em>motion</em> and code.</span>
+        </h1>
+        <p class="hero__lede" data-reveal style="--d:.55s">Prinse Andrew Katigbak — a Dubai-based creative working across poster design, websites, photography and film.</p>
+        <div class="hero__actions" data-reveal style="--d:.65s">
+          <a class="btn btn--dark" href="#posters" data-magnetic>View the work <span aria-hidden="true">↘</span></a>
+          <a class="link" href="#contact">Start a collaboration →</a>
         </div>
-        <div class="hero-meta" id="heroStats" aria-label="Portfolio counts">
-          <div><strong>—</strong><span>Frames</span></div>
-          <div><strong>—</strong><span>Cuts</span></div>
-          <div><strong>—</strong><span>Builds</span></div>
-          <div><strong>—</strong><span>Updates</span></div>
-        </div>
+        <dl class="stats" data-reveal style="--d:.75s">
+          <div><dt>Posters</dt><dd data-count data-stat="posters">05</dd></div>
+          <div><dt>Web projects</dt><dd data-count data-stat="web">05</dd></div>
+          <div><dt>Frames</dt><dd data-count data-stat="frames">08</dd></div>
+          <div><dt>Cuts</dt><dd data-count data-stat="cuts">05</dd></div>
+        </dl>
       </div>
-      <figure class="hero-frame">
-        <div class="hero-image-wrap">
-          <img id="heroImage" src="assets/photos/golden-hour.jpg" alt="Silhouetted palm tree on a Dubai beach at golden hour" width="1800" height="1350">
-          <span class="hero-badge">Selected frame</span>
+
+      <figure class="hero__frame" data-tilt="5" data-reveal="fade" style="--d:.2s">
+        <div class="hero__img" data-reveal="clip" style="--d:.3s">
+          <img src="assets/photos/golden-hour.webp" alt="Silhouetted palm tree on a Dubai beach at golden hour" width="1800" height="1350" fetchpriority="high">
+          <span class="badge">Selected frame</span>
         </div>
-        <figcaption><span>Frame 00 — Cover</span><span id="heroLabel">Golden Hour</span></figcaption>
+        <figcaption><span>Frame 00 — Cover</span><span>Golden Hour</span></figcaption>
+        <a class="light-chip" href="#frames" id="lightChip" aria-label="Dubai light report">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span data-lr="chip">Reading the light in Dubai…</span>
+        </a>
       </figure>
     </div>
-    <div class="wrap marquee" aria-hidden="true">
-      <span>Dubai, UAE</span><i>✦</i><span>Photography</span><i>✦</i><span>Film &amp; Editing</span><i>✦</i><span>Web &amp; Digital</span>
-    </div>
-  </header>
 
-  <section id="work">
-    <div class="wrap">
-      <div class="section-head split-head">
-        <div>
-          <p class="eyebrow" id="photoCount">Proof Sheet</p>
-          <h2>Recent frames</h2>
+    <nav class="wrap chapters" aria-label="Chapters" data-reveal style="--d:.9s">
+      <a href="#posters"><b>01</b>Posters</a><i aria-hidden="true">+</i>
+      <a href="#reallux"><b>02</b>Real Lux</a><i aria-hidden="true">+</i>
+      <a href="#websites"><b>03</b>Live websites</a><i aria-hidden="true">+</i>
+      <a href="#frames"><b>04</b>Frames</a><i aria-hidden="true">+</i>
+      <a href="#reel"><b>05</b>Edits &amp; motion</a>
+    </nav>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Poster design</span><i>✦</i>
+          <span><em>Websites</em></span><i>✦</i>
+          <span>Photography</span><i>✦</i>
+          <span><em>Film &amp; editing</em></span><i>✦</i>
+          <span>Dubai, UAE</span><i>✦</i>
+          <span><em>Light, motion &amp; code</em></span><i>✦</i>
         </div>
-        <p>A living proof sheet of scenes, details and light gathered around Dubai and wherever the camera goes next.</p>
       </div>
-      <div class="proof-grid" id="proofGrid" aria-live="polite"></div>
     </div>
   </section>
 
-  <section id="film" class="section-tint">
-    <div class="wrap">
-      <div class="section-head split-head">
-        <div>
-          <p class="eyebrow teal" id="filmCount">Reel</p>
-          <h2>Edits &amp; motion</h2>
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about" data-chapter>
+    <div class="wrap about__grid">
+      <div class="about__bio">
+        <p class="eyebrow">About</p>
+        <h2 class="h-xl" data-split>Prinse Katigbak</h2>
+        <p data-reveal>Most people know me as <strong>Prinseyy</strong>. I’m based in Dubai, where I spend a lot of time chasing whatever light is good that day — usually early morning or just before sunset.</p>
+        <p data-reveal>Photography came first. Video followed when I wanted still images to move, and coding became another way to turn ideas into something people can actually use. Today that means posters, websites, photo sets and edits — this portfolio collects a selection of each.</p>
+
+        <div class="toolkit">
+          <p class="eyebrow">Toolkit</p>
+          <div class="toolkit__grid">
+            <div class="tool" data-reveal style="--d:0s"><h3>Web</h3><p>HTML5, CSS3, JavaScript, React.js, REST APIs, MongoDB, Responsive Design</p></div>
+            <div class="tool" data-reveal style="--d:.06s"><h3>Mobile &amp; Game</h3><p>Android Studio, Kotlin, Unity 2D, C#</p></div>
+            <div class="tool" data-reveal style="--d:.12s"><h3>Languages</h3><p>JavaScript, Kotlin, C#, Python</p></div>
+            <div class="tool" data-reveal style="--d:.18s"><h3>Tools</h3><p>Git, GitHub, VS Code, Figma, WordPress</p></div>
+            <div class="tool" data-reveal style="--d:.24s"><h3>Media</h3><p>Adobe Premiere Pro, Adobe Illustrator, Photography, Videography</p></div>
+            <div class="tool" data-reveal style="--d:.3s"><h3>Approach</h3><p>Problem Solving, Collaboration, Client Communication, Project Planning</p></div>
+          </div>
         </div>
-        <p>Short edits, filmmaking exercises, visual experiments and finished cuts.</p>
       </div>
-      <div class="reel" id="reel" aria-live="polite"></div>
+
+      <aside class="about__side">
+        <figure class="portrait" data-reveal>
+          <div class="portrait__img"><img src="assets/img/portrait.webp" alt="Portrait of Prinse Katigbak" width="900" height="978" loading="lazy" decoding="async" data-parallax="6"></div>
+          <figcaption><span>Prinse Katigbak</span><span>Dubai, UAE · 25.20° N, 55.27° E</span></figcaption>
+        </figure>
+
+        <div class="contents">
+          <p class="eyebrow">Contents</p>
+          <ol>
+            <li data-reveal style="--d:0s"><a href="#posters"><span class="n">01</span><span class="t">Fresher’s Party ’26<small>Poster series</small></span><span class="arr" aria-hidden="true">→</span></a></li>
+            <li data-reveal style="--d:.05s"><a href="#reallux"><span class="n">02</span><span class="t">Real Lux<small>Freelance website design</small></span><span class="arr" aria-hidden="true">→</span></a></li>
+            <li data-reveal style="--d:.1s"><a href="#websites"><span class="n">03</span><span class="t">Live websites<small>Web development</small></span><span class="arr" aria-hidden="true">→</span></a></li>
+            <li data-reveal style="--d:.15s"><a href="#frames"><span class="n">04</span><span class="t">Frames<small>Photography</small></span><span class="arr" aria-hidden="true">→</span></a></li>
+            <li data-reveal style="--d:.2s"><a href="#reel"><span class="n">05</span><span class="t">Edits &amp; motion<small>Film &amp; video</small></span><span class="arr" aria-hidden="true">→</span></a></li>
+            <li data-reveal style="--d:.25s"><a href="#contact"><span class="n">—</span><span class="t">Contact<small>Let’s work together</small></span><span class="arr" aria-hidden="true">→</span></a></li>
+          </ol>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <section id="code">
-    <div class="wrap">
-      <div class="section-head split-head">
+  <!-- ============ 01 POSTERS ============ -->
+  <div id="posters" data-chapter>
+    <section class="section posters">
+      <div class="wrap posters__intro">
         <div>
-          <p class="eyebrow teal" id="projectCount">Build Log</p>
-          <h2>Digital work</h2>
+          <span class="numeral" aria-hidden="true" data-parallax="14">01</span>
+          <p class="eyebrow">Graphic design · Poster series</p>
+          <h2 class="h-xl" data-split>Fresher’s Party ’26</h2>
+          <p class="subtitle" data-reveal>Duality: Vintage &amp; Futuristic</p>
+          <p class="lede" data-reveal>Five poster concepts for the Fresher’s Party at Bath Spa University’s RAK campus. The theme was duality, so every concept puts an old world and a new one on the same page and lets them meet in a different way — a split grid, a record-sleeve collage, a torn portrait, an engraved dial and a painted cinematic scene.</p>
+          <dl class="meta-grid" data-reveal>
+            <div><dt>For</dt><dd>Bath Spa University, RAK Campus</dd></div>
+            <div><dt>Event</dt><dd>Fresher’s Party · 5 December 2026</dd></div>
+            <div><dt>Venue</dt><dd>RAK Exhibition Centre</dd></div>
+            <div><dt>Deliverable</dt><dd>5 poster concepts</dd></div>
+            <div><dt>Format</dt><dd>1080 × 1350 (4:5) · 1080 × 1620 (2:3)</dd></div>
+            <div><dt>Built in</dt><dd>Figma</dd></div>
+          </dl>
         </div>
-        <p>Selected websites, apps and interactive builds — from idea to published experience.</p>
+        <figure class="poster-feature" data-reveal data-tilt="4">
+          <button class="zoomable" type="button" data-lightbox="posters:2" data-cursor="View" aria-label="View concept 03, Two Eras, full size">
+            <img src="assets/img/posters/03-two-eras.webp" alt="Fresher’s Party ’26 poster, concept 03 Two Eras: a torn split portrait of a Victorian woman and a cyber-armoured knight" width="1110" height="1665" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="figcap"><span>Concept 03</span><span>Two Eras</span></figcaption>
+        </figure>
       </div>
-      <div class="build-list" id="buildList" aria-live="polite"></div>
+    </section>
+
+    <section class="series is-dark" id="series">
+      <div class="wrap split-head series__head">
+        <div>
+          <p class="eyebrow">The series</p>
+          <h2 class="h-lg" data-split>One brief, <em>five directions.</em></h2>
+        </div>
+        <p data-reveal>Every concept carries the same core information — event, theme, date and venue — so any one of them could front the campaign. What changes is how the two eras meet.</p>
+      </div>
+
+      <div class="series__pin">
+        <div class="series__track" id="seriesTrack">
+          <article class="note" data-reveal>
+            <span class="note__n">01<i>—</i>02</span>
+            <p>Two takes built on a hard split: the page is cut down the middle and each half is given to one era.</p>
+          </article>
+
+          <article class="concept" style="--ar:.8" data-reveal>
+            <button class="concept__img" type="button" data-lightbox="posters:0" data-cursor="View" aria-label="View concept 01, Split Grid, full size">
+              <img src="assets/img/posters/01-split-grid-sm.webp" alt="Poster concept 01 Split Grid: cream editorial half with a sun dial, black-and-cyan blueprint half with a wireframe globe" width="560" height="700" loading="lazy" decoding="async">
+            </button>
+            <div class="concept__body">
+              <div class="concept__title"><span class="n">01</span><h3>Split Grid</h3></div>
+              <p>A cream-and-rust editorial page with a sun dial on the left, a black-and-cyan blueprint with a wireframe globe on the right, joined by a single ampersand.</p>
+              <ul class="swatches" aria-label="Palette">
+                <li><button type="button" style="--c:#F1F0E7" data-copy="#F1F0E7" aria-label="Copy colour #F1F0E7"></button></li>
+                <li><button type="button" style="--c:#B84A27" data-copy="#B84A27" aria-label="Copy colour #B84A27"></button></li>
+                <li><button type="button" style="--c:#0B0D11" data-copy="#0B0D11" aria-label="Copy colour #0B0D11"></button></li>
+                <li><button type="button" style="--c:#3FE3EA" data-copy="#3FE3EA" aria-label="Copy colour #3FE3EA"></button></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="concept" style="--ar:.8" data-reveal>
+            <button class="concept__img" type="button" data-lightbox="posters:1" data-cursor="View" aria-label="View concept 02, Side A / Side B, full size">
+              <img src="assets/img/posters/02-side-a-side-b-sm.webp" alt="Poster concept 02 Side A / Side B: a vinyl disc and a chrome form under heavy condensed type and a synthwave grid" width="560" height="700" loading="lazy" decoding="async">
+            </button>
+            <div class="concept__body">
+              <div class="concept__title"><span class="n">02</span><h3>Side A / Side B</h3></div>
+              <p>A record-sleeve collage: a vinyl disc labelled “Analog Soul” and a chrome form labelled “Future Form”, under heavy condensed type and a synthwave grid.</p>
+              <ul class="swatches" aria-label="Palette">
+                <li><button type="button" style="--c:#FFF3CF" data-copy="#FFF3CF" aria-label="Copy colour #FFF3CF"></button></li>
+                <li><button type="button" style="--c:#A44924" data-copy="#A44924" aria-label="Copy colour #A44924"></button></li>
+                <li><button type="button" style="--c:#39293E" data-copy="#39293E" aria-label="Copy colour #39293E"></button></li>
+                <li><button type="button" style="--c:#73FFF6" data-copy="#73FFF6" aria-label="Copy colour #73FFF6"></button></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="note" data-reveal>
+            <span class="note__n">03<i>—</i>04</span>
+            <p>Here the two eras overlap instead of sitting side by side — a tear through a portrait, a dial that changes material halfway round.</p>
+          </article>
+
+          <article class="concept" style="--ar:.6667" data-reveal>
+            <button class="concept__img" type="button" data-lightbox="posters:2" data-cursor="View" aria-label="View concept 03, Two Eras, full size">
+              <img src="assets/img/posters/03-two-eras-sm.webp" alt="Poster concept 03 Two Eras: a torn split portrait of a Victorian figure and a cyber-armoured knight" width="560" height="840" loading="lazy" decoding="async">
+            </button>
+            <div class="concept__body">
+              <div class="concept__title"><span class="n">03</span><h3>Two Eras</h3></div>
+              <p>A torn split portrait — a Victorian figure with a pocket watch against a cyber-armoured knight — with blackletter and digital type sharing the footer.</p>
+              <ul class="swatches" aria-label="Palette">
+                <li><button type="button" style="--c:#F2EAD4" data-copy="#F2EAD4" aria-label="Copy colour #F2EAD4"></button></li>
+                <li><button type="button" style="--c:#694A36" data-copy="#694A36" aria-label="Copy colour #694A36"></button></li>
+                <li><button type="button" style="--c:#05080C" data-copy="#05080C" aria-label="Copy colour #05080C"></button></li>
+                <li><button type="button" style="--c:#6FE6EE" data-copy="#6FE6EE" aria-label="Copy colour #6FE6EE"></button></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="concept" style="--ar:.8" data-reveal>
+            <button class="concept__img" type="button" data-lightbox="posters:3" data-cursor="View" aria-label="View concept 04, Engraved / HUD, full size">
+              <img src="assets/img/posters/04-engraved-hud-sm.webp" alt="Poster concept 04 Engraved / HUD: an invitation layout with one dial half engraved ornament, half heads-up display" width="560" height="700" loading="lazy" decoding="async">
+            </button>
+            <div class="concept__body">
+              <div class="concept__title"><span class="n">04</span><h3>Engraved / HUD</h3></div>
+              <p>An invitation-style layout where one dial is half engraved ornament, half heads-up display. Blackletter on parchment meets cyan line work on black.</p>
+              <ul class="swatches" aria-label="Palette">
+                <li><button type="button" style="--c:#D9C4A6" data-copy="#D9C4A6" aria-label="Copy colour #D9C4A6"></button></li>
+                <li><button type="button" style="--c:#6E1F22" data-copy="#6E1F22" aria-label="Copy colour #6E1F22"></button></li>
+                <li><button type="button" style="--c:#0B0D11" data-copy="#0B0D11" aria-label="Copy colour #0B0D11"></button></li>
+                <li><button type="button" style="--c:#2BC6D2" data-copy="#2BC6D2" aria-label="Copy colour #2BC6D2"></button></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="note" data-reveal>
+            <span class="note__n">05</span>
+            <p>Painted key art instead of a layout — the most cinematic of the set, and the one carrying the university’s branding.</p>
+          </article>
+
+          <article class="concept" style="--ar:.8" data-reveal>
+            <button class="concept__img" type="button" data-lightbox="posters:4" data-cursor="View" aria-label="View concept 05, Duality, full size">
+              <img src="assets/img/posters/05-duality-sm.webp" alt="Poster concept 05 Duality: painted key art of a gothic city and planet-filled sky behind two figures standing back to back" width="560" height="700" loading="lazy" decoding="async">
+            </button>
+            <div class="concept__body">
+              <div class="concept__title"><span class="n">05</span><h3>Duality</h3></div>
+              <p>A gothic city and a planet-filled sky meet behind two figures standing back to back, under a gilded title.</p>
+              <ul class="swatches" aria-label="Palette">
+                <li><button type="button" style="--c:#D8B25A" data-copy="#D8B25A" aria-label="Copy colour #D8B25A"></button></li>
+                <li><button type="button" style="--c:#884A3F" data-copy="#884A3F" aria-label="Copy colour #884A3F"></button></li>
+                <li><button type="button" style="--c:#25476F" data-copy="#25476F" aria-label="Copy colour #25476F"></button></li>
+                <li><button type="button" style="--c:#0B101B" data-copy="#0B101B" aria-label="Copy colour #0B101B"></button></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="wrap series__progress" aria-hidden="true">
+          <span id="seriesCount">01 / 05</span>
+          <div class="series__bar"><i id="seriesBar"></i></div>
+          <span class="series__hint">Scroll <b>→</b></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section duality is-dark">
+      <div class="wrap duality__grid">
+        <figure class="duality__poster" data-reveal>
+          <button class="zoomable" type="button" data-lightbox="posters:4" data-cursor="View" aria-label="View concept 05, Duality, full size">
+            <img src="assets/img/posters/05-duality.webp" alt="Poster concept 05 Duality for the Fresher’s Party at RAK Exhibition Centre" width="1110" height="1388" loading="lazy" decoding="async">
+          </button>
+          <figcaption class="figcap"><span>Fresher’s Party ’26</span><span>Concept 05</span></figcaption>
+        </figure>
+        <div class="duality__copy">
+          <p class="eyebrow">Concept 05</p>
+          <h3 class="h-xl" data-split>Duality</h3>
+          <p class="lede" data-reveal>Painted key art instead of a layout. A gothic city and a planet-filled sky meet behind two figures standing back to back, under a gilded title. The most cinematic of the set, and the one carrying the university’s branding.</p>
+          <ul class="swatches swatches--lg" aria-label="Palette" data-reveal>
+            <li><button type="button" style="--c:#D8B25A" data-copy="#D8B25A" aria-label="Copy colour #D8B25A"></button></li>
+            <li><button type="button" style="--c:#884A3F" data-copy="#884A3F" aria-label="Copy colour #884A3F"></button></li>
+            <li><button type="button" style="--c:#25476F" data-copy="#25476F" aria-label="Copy colour #25476F"></button></li>
+            <li><button type="button" style="--c:#0B101B" data-copy="#0B101B" aria-label="Copy colour #0B101B"></button></li>
+          </ul>
+          <blockquote class="pull" data-reveal>Two worlds, one night.</blockquote>
+          <dl class="meta-grid" data-reveal>
+            <div><dt>Date &amp; time</dt><dd>5 December 2026 · 11 AM – 6 PM</dd></div>
+            <div><dt>Venue</dt><dd>RAK Exhibition Centre (RAK Expo)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ 02 REAL LUX ============ -->
+  <section id="reallux" class="reallux" data-chapter data-case-study>
+    <div class="section rl-intro is-dark">
+      <div class="wrap rl-intro__grid">
+        <div>
+          <span class="numeral" aria-hidden="true" data-parallax="14">02</span>
+          <p class="eyebrow">Freelance · Website design</p>
+          <h2 class="h-xl" data-split>Real Lux</h2>
+          <p class="subtitle" data-reveal>Where care comes first.</p>
+          <p class="lede" data-reveal>Real Lux runs automated massage chairs across the UAE, with more than ten years of placing them in malls, cinemas, amusement parks, hotels, exhibitions and night markets. The site had to do two jobs: sell a ten-minute break to the public, and sell a revenue-share partnership to venue owners. It went from a greyscale wireframe through two visual rounds to a final black-and-gold design.</p>
+          <dl class="meta-grid" data-reveal>
+            <div><dt>Client</dt><dd>Real Lux, UAE</dd></div>
+            <div><dt>Type</dt><dd>Freelance</dd></div>
+            <div><dt>Scope</dt><dd>Wireframe · UI design · page structure</dd></div>
+            <div><dt>Built in</dt><dd>Figma</dd></div>
+          </dl>
+        </div>
+        <figure class="brandmark" data-reveal data-tilt="8">
+          <div class="brandmark__glow" aria-hidden="true"></div>
+          <img src="assets/img/reallux/brand-mark.webp" alt="Real Lux brand mark: a gold geometric hexagon monogram" width="900" height="1071" loading="lazy" decoding="async">
+          <figcaption><span>Real Lux</span><span>Brand mark</span></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="section rl-process">
+      <div class="wrap">
+        <div class="split-head">
+          <div>
+            <p class="eyebrow">Process</p>
+            <h3 class="h-lg" data-split>From wireframe <em>to final.</em></h3>
+          </div>
+          <p data-reveal>Structure first, then colour, then restraint. Each round kept what worked and cut what didn’t.</p>
+        </div>
+        <div class="process-line" aria-hidden="true"><i></i><span style="--p:0%"></span><span style="--p:50%"></span><span style="--p:100%"></span></div>
+        <ol class="process">
+          <li data-reveal style="--d:0s">
+            <button class="shot" type="button" data-lightbox="reallux:0" data-cursor="View" aria-label="View the wireframe full size">
+              <img src="assets/img/reallux/process-01-wireframe.webp" alt="Greyscale wireframe of the Real Lux homepage" width="1000" height="1230" loading="lazy" decoding="async">
+            </button>
+            <div class="process__title"><span class="n">01</span><h4>Wireframe</h4></div>
+            <p>Greyscale blocks to settle the content order: hero and booking, about, mission and vision, products, locations, contacts.</p>
+          </li>
+          <li data-reveal style="--d:.1s">
+            <button class="shot" type="button" data-lightbox="reallux:1" data-cursor="View" aria-label="View the first visual pass full size">
+              <img src="assets/img/reallux/process-02-first-pass.webp" alt="First visual pass of the Real Lux homepage in black and gold" width="1000" height="1230" loading="lazy" decoding="async">
+            </button>
+            <div class="process__title"><span class="n">02</span><h4>First visual pass</h4></div>
+            <p>The same structure dressed in black and gold, with the brand mark in colour and a display serif for headings.</p>
+          </li>
+          <li data-reveal style="--d:.2s">
+            <button class="shot" type="button" data-lightbox="reallux:2" data-cursor="View" aria-label="View the final direction full size">
+              <img src="assets/img/reallux/process-03-final.webp" alt="Final direction of the Real Lux homepage: Relax. Refresh. Revitalize." width="1000" height="1230" loading="lazy" decoding="async">
+            </button>
+            <div class="process__title"><span class="n">03</span><h4>Final direction</h4></div>
+            <p>Rebuilt around one promise — Relax. Refresh. Revitalize. — with more space, a tighter grid and gold used sparingly.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section rl-final is-dark">
+      <div class="wrap">
+        <div class="split-head">
+          <div>
+            <p class="eyebrow">Final homepage</p>
+            <h3 class="h-lg" data-split>Relax. <em>Refresh.</em> Revitalize.</h3>
+          </div>
+          <p data-reveal>The page moves from feeling to proof: a calm hero, the company story, six smart features, the reasons to choose Real Lux, a 50/50 shared-success model for venue partners, locations, and placement options for any space.</p>
+        </div>
+
+        <div class="rl-final__grid">
+          <figure class="rl-desktop" data-reveal>
+            <button class="browser" type="button" data-lightbox="reallux:3" data-cursor="View" aria-label="View the desktop homepage hero full size">
+              <span class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span>Real Lux — desktop homepage</span></span>
+              <img src="assets/img/reallux/homepage-hero.webp" alt="Real Lux desktop homepage hero with the line Relax. Refresh. Revitalize." width="1900" height="1296" loading="lazy" decoding="async">
+            </button>
+            <figcaption class="figcap"><span>Hero</span><span>Desktop homepage</span></figcaption>
+          </figure>
+
+          <div class="colourway" data-reveal style="--d:.1s">
+            <div class="seg" role="tablist" aria-label="Colourway">
+              <button type="button" role="tab" aria-selected="true" data-way="gold">Gold · final</button>
+              <button type="button" role="tab" aria-selected="false" data-way="mono">Mono · alt</button>
+            </div>
+            <button class="longshot" type="button" data-lightbox="reallux:4" data-cursor="View" aria-label="View the full homepage in the selected colourway">
+              <img class="is-active" data-way-img="gold" src="assets/img/reallux/homepage-gold.webp" alt="Full Real Lux homepage in the gold colourway" width="460" height="1330" loading="lazy" decoding="async">
+              <img data-way-img="mono" src="assets/img/reallux/homepage-mono.webp" alt="Full Real Lux homepage in the mono colourway" width="460" height="1330" loading="lazy" decoding="async">
+            </button>
+            <p class="figcap"><span>Full page</span><span class="colourway__label">Gold (final)</span></p>
+          </div>
+        </div>
+
+        <dl class="rl-facts">
+          <div data-reveal style="--d:0s"><dt>Years placing chairs</dt><dd><span data-count data-to="10">10</span>+</dd></div>
+          <div data-reveal style="--d:.08s"><dt>Locations</dt><dd><span data-count data-to="11">11</span>+</dd></div>
+          <div data-reveal style="--d:.16s"><dt>Revenue split</dt><dd>50/50</dd></div>
+          <div data-reveal style="--d:.24s"><dt>Smart features</dt><dd><span data-count data-to="6">06</span></dd></div>
+        </dl>
+
+        <dl class="meta-grid meta-grid--wide" data-reveal>
+          <div><dt>Page sections</dt><dd>Hero · Journey · Features · Why us · Partners · Locations · Placement</dd></div>
+          <div><dt>Colourways</dt><dd>Gold (final) · Mono (alternate)</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="section rl-sections">
+      <div class="wrap">
+        <div class="split-head">
+          <div>
+            <p class="eyebrow">Inside the page</p>
+            <h3 class="h-lg" data-split>Section <em>by section.</em></h3>
+          </div>
+          <p data-reveal>One visual system — serif headlines with a gold italic line, numbered cards, thin gold rules — repeated so a long page still feels like one piece.</p>
+        </div>
+        <div class="rl-cards">
+          <article class="rl-card" data-reveal style="--d:0s">
+            <button class="shot" type="button" data-lightbox="reallux:6" data-cursor="View" aria-label="View the Smart Features section full size">
+              <img src="assets/img/reallux/section-features.webp" alt="Real Lux Smart Features section" width="1300" height="804" loading="lazy" decoding="async">
+            </button>
+            <div class="rl-card__head"><h4>Smart Features</h4><span class="tag">Technology</span></div>
+            <p>Six numbered cards: zero-gravity comfort, SL-track precision, airbag massage, smart reminder, armrest controls, secure cash box.</p>
+          </article>
+          <article class="rl-card" data-reveal style="--d:.08s">
+            <button class="shot" type="button" data-lightbox="reallux:7" data-cursor="View" aria-label="View the Why Choose Real Lux section full size">
+              <img src="assets/img/reallux/section-why.webp" alt="Real Lux Why Choose Real Lux section" width="1300" height="666" loading="lazy" decoding="async">
+            </button>
+            <div class="rl-card__head"><h4>Why Choose Real Lux?</h4><span class="tag">Benefits</span></div>
+            <p>Six benefits in a list, a pull quote, and three proof points: 10+ years, 11+ locations, 50/50 revenue split.</p>
+          </article>
+          <article class="rl-card" data-reveal style="--d:0s">
+            <button class="shot" type="button" data-lightbox="reallux:8" data-cursor="View" aria-label="View the Shared Success Model section full size">
+              <img src="assets/img/reallux/section-partners.webp" alt="Real Lux Shared Success Model section" width="1300" height="495" loading="lazy" decoding="async">
+            </button>
+            <div class="rl-card__head"><h4>Shared Success Model</h4><span class="tag">Partners</span></div>
+            <p>The pitch to venue owners — equal profit sharing, monthly reports, and a WhatsApp call to action.</p>
+          </article>
+          <article class="rl-card" data-reveal style="--d:.08s">
+            <button class="shot" type="button" data-lightbox="reallux:9" data-cursor="View" aria-label="View the Any Space, Any Setup section full size">
+              <img src="assets/img/reallux/section-placement.webp" alt="Real Lux Any Space, Any Setup section" width="1300" height="534" loading="lazy" decoding="async">
+            </button>
+            <div class="rl-card__head"><h4>Any Space, Any Setup</h4><span class="tag">Placement</span></div>
+            <p>Four ways to deploy the chairs, from airport lobbies to pop-up stations at events and expos.</p>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="latest" class="latest-section">
+  <!-- ============ 03 LIVE WEBSITES ============ -->
+  <section class="section websites" id="websites" data-chapter>
     <div class="wrap">
-      <div class="section-head split-head">
+      <div class="split-head websites__head">
         <div>
-          <p class="eyebrow" id="postCount">Studio Log</p>
-          <h2>Latest work</h2>
+          <span class="numeral numeral--teal" aria-hidden="true" data-parallax="14">03</span>
+          <p class="eyebrow eyebrow--teal">Web development · Build log</p>
+          <h2 class="h-xl" data-split>Live <em class="teal">websites.</em></h2>
         </div>
-        <p>New websites, finished edits, photo sets, experiments and project launches — added as they happen.</p>
+        <p data-reveal>Selected websites from idea to published experience — storefronts, a business profile and a service site. Each title links to the live build.</p>
       </div>
-      <div class="post-grid" id="postGrid" aria-live="polite"></div>
+
+      <div class="sites" id="sitesList"></div>
+
+      <div class="gh" id="ghFeed" hidden>
+        <div class="gh__head">
+          <div>
+            <p class="eyebrow eyebrow--teal">Live from GitHub</p>
+            <h3>Recently pushed</h3>
+          </div>
+          <a class="link" id="ghProfile" href="https://github.com/Prinseyy17" target="_blank" rel="noopener">GitHub profile ↗</a>
+        </div>
+        <ul class="gh__list" id="ghList"></ul>
+      </div>
     </div>
   </section>
 
-  <section id="about" class="about-section">
-    <div class="wrap">
-      <div class="about-grid">
-        <div class="about-bio">
-          <p class="eyebrow">About</p>
-          <h2>Prinse Katigbak</h2>
-          <p>Most people know me as <strong>Prinseyy</strong>. I'm based in Dubai, where I spend a lot of time chasing whatever light is good that day — usually early morning or just before sunset.</p>
-          <p>Photography came first. Video followed when I wanted still images to move, and coding became another way to turn ideas into something people can actually use.</p>
+  <!-- ============ 04 FRAMES ============ -->
+  <div id="frames" data-chapter>
+    <section class="frames-hero is-dark">
+      <div class="frames-hero__bg" aria-hidden="true">
+        <img src="assets/photos/golden-hour.webp" alt="" width="1800" height="1350" loading="lazy" decoding="async">
+      </div>
+      <div class="wrap frames-hero__inner">
+        <div class="frames-hero__copy">
+          <span class="numeral" aria-hidden="true">04</span>
+          <p class="eyebrow">Photography</p>
+          <h2 class="h-xl" data-split>Frames</h2>
+          <p class="lede" data-reveal>A living proof sheet of scenes, details and light gathered around Dubai — usually early morning or just before sunset, when the light is worth chasing.</p>
+          <p data-reveal><a class="link" href="https://www.instagram.com/yeetmanjones17/" target="_blank" rel="noopener">More on Instagram — @yeetmanjones17 ↗</a></p>
+          <p class="mono-note" data-reveal>PRINSEGOESPLA · E-photography, toy photography</p>
         </div>
-        <aside class="about-card">
-          <span class="about-index">25.20° N, 55.27° E</span>
-          <h3>Dubai, United Arab Emirates</h3>
-          <p>Available for selected creative collaborations, digital projects and visual work.</p>
-          <a href="#contact">Get in touch →</a>
+
+        <aside class="light-report" id="lightReport" aria-label="Live light report for Dubai" data-reveal>
+          <div class="lr__head">
+            <span class="lr__title">Light report · Dubai</span>
+            <span class="lr__live"><span class="live-dot" aria-hidden="true"></span><time data-clock>--:--</time></span>
+          </div>
+          <div class="lr__now">
+            <strong data-lr="temp">--°</strong>
+            <span data-lr="sky">Checking the sky…</span>
+          </div>
+          <svg class="lr__arc" viewBox="0 0 300 128" aria-hidden="true">
+            <line class="lr__horizon" x1="0" y1="116" x2="300" y2="116"/>
+            <path class="lr__track" d="M10 116 A140 100 0 0 1 290 116" pathLength="1"/>
+            <path class="lr__done" id="lrDone" d="M10 116 A140 100 0 0 1 290 116" pathLength="1"/>
+            <circle class="lr__sun" id="lrSun" r="7" cx="10" cy="116"/>
+          </svg>
+          <div class="lr__count">
+            <span data-lr="label">Next golden hour</span>
+            <strong data-lr="countdown">—</strong>
+          </div>
+          <dl class="lr__times">
+            <div><dt>Sunrise</dt><dd data-lr="sunrise">--:--</dd></div>
+            <div><dt>Golden</dt><dd data-lr="golden">--:--</dd></div>
+            <div><dt>Sunset</dt><dd data-lr="sunset">--:--</dd></div>
+          </dl>
+          <p class="lr__src">Live sun &amp; weather · Open-Meteo</p>
         </aside>
       </div>
+      <p class="wrap frames-hero__cap">F.01 — Golden Hour · Dubai</p>
+    </section>
 
-      <div class="skills-block">
-        <p class="eyebrow">Toolkit</p>
-        <div class="skills-grid">
-          <div class="skill-card"><span class="skill-label">Web</span><p>HTML5, CSS3, JavaScript, React.js, REST APIs, MongoDB, Responsive Design</p></div>
-          <div class="skill-card"><span class="skill-label">Mobile &amp; Game</span><p>Android Studio, Kotlin, Unity 2D, C#</p></div>
-          <div class="skill-card"><span class="skill-label">Languages</span><p>JavaScript, Kotlin, C#, Python</p></div>
-          <div class="skill-card"><span class="skill-label">Tools</span><p>Git, GitHub, VS Code</p></div>
-          <div class="skill-card"><span class="skill-label">Media</span><p>Adobe Premiere Pro, Adobe Illustrator, Photography, Videography</p></div>
-          <div class="skill-card"><span class="skill-label">Approach</span><p>Problem Solving, Collaboration, Client Communication, Project Planning</p></div>
+    <section class="section proof">
+      <div class="wrap">
+        <div class="split-head">
+          <div>
+            <p class="eyebrow">Proof sheet</p>
+            <h3 class="h-lg" data-split>Recent <em>frames.</em></h3>
+          </div>
+          <p data-reveal>Coastline, palms, sky and small details — shot around Dubai and wherever the camera goes next. Tap any frame to view it full size.</p>
         </div>
+        <div class="proof__grid" id="proofGrid"></div>
       </div>
+    </section>
+  </div>
+
+  <!-- ============ 05 EDITS & MOTION ============ -->
+  <section class="section reel is-dark" id="reel" data-chapter>
+    <div class="wrap">
+      <div class="split-head">
+        <div>
+          <span class="numeral" aria-hidden="true" data-parallax="14">05</span>
+          <p class="eyebrow">Reel</p>
+          <h2 class="h-xl" data-split>Edits <em>&amp; motion.</em></h2>
+        </div>
+        <p data-reveal>Short edits, filmmaking exercises, visual experiments and finished cuts — edited in Adobe Premiere Pro. Each title opens the cut.</p>
+      </div>
+      <ol class="reel__list" id="reelList"></ol>
+    </div>
+    <div class="reel__preview" id="reelPreview" aria-hidden="true">
+      <img alt="" decoding="async">
+      <video muted loop playsinline preload="none"></video>
+      <span class="reel__preview-tag"><b>▶</b> <span class="reel__preview-n">R.01</span></span>
     </div>
   </section>
 
-  <section id="contact" class="contact-section">
-    <div class="wrap">
-      <div class="contact-kicker">Have something in mind?</div>
-      <div class="contact-head">
-        <p class="eyebrow">Contact</p>
-        <h2>Let's make something <em>worth seeing.</em></h2>
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact" data-chapter>
+    <div class="wrap contact__grid">
+      <div class="contact__lead">
+        <p class="kicker" data-reveal>Have something in mind?</p>
+        <h2 class="h-display" data-split>Let’s make something <em>worth seeing.</em></h2>
+        <p data-reveal>Available for selected creative collaborations, digital projects and visual work — posters, websites, photo sets and edits.</p>
+        <div class="contact__quick" data-reveal>
+          <button class="btn btn--dark" type="button" id="copyEmail" data-magnetic>Copy email <span aria-hidden="true">⧉</span></button>
+          <a class="btn" href="https://wa.me/971554864452" target="_blank" rel="noopener" data-magnetic>WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <ul class="contact-list">
-        <li><a href="mailto:prinseandrewkatigbak@gmail.com"><span class="label">Email</span><span class="value">prinseandrewkatigbak@gmail.com</span><span class="arrow">↗</span></a></li>
-        <li><a href="https://instagram.com/prinseyy18" target="_blank" rel="noopener"><span class="label">Instagram</span><span class="value">@prinseyy18</span><span class="arrow">↗</span></a></li>
-        <li><a href="https://facebook.com/prinseandrewkatigbak" target="_blank" rel="noopener"><span class="label">Facebook</span><span class="value">Prinse Andrew Santos Katigbak</span><span class="arrow">↗</span></a></li>
-        <li><a href="tel:+971554864452"><span class="label">Mobile</span><span class="value">+971 55 486 4452</span><span class="arrow">↗</span></a></li>
-      </ul>
+
+      <div class="contact__links">
+        <p class="eyebrow">Contact</p>
+        <ul class="contact-list">
+          <li data-reveal style="--d:0s"><a href="mailto:prinseandrewkatigbak@gmail.com"><span class="label">Email</span><span class="value">prinseandrewkatigbak@gmail.com</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li data-reveal style="--d:.05s"><a href="tel:+971554864452"><span class="label">Mobile</span><span class="value">+971 55 486 4452</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li data-reveal style="--d:.1s"><a href="https://instagram.com/prinseyy18" target="_blank" rel="noopener"><span class="label">Instagram</span><span class="value">@prinseyy18</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li data-reveal style="--d:.15s"><a href="https://www.instagram.com/yeetmanjones17/" target="_blank" rel="noopener"><span class="label">Photo IG</span><span class="value">@yeetmanjones17<small>PRINSEGOESPLA · E-photography, toy photography</small></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li data-reveal style="--d:.2s"><a href="https://facebook.com/prinseandrewkatigbak" target="_blank" rel="noopener"><span class="label">Facebook</span><span class="value">Prinse Andrew Santos Katigbak</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li data-reveal style="--d:.25s"><a href="https://github.com/Prinseyy17" target="_blank" rel="noopener"><span class="label">GitHub</span><span class="value">Prinseyy17</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <form class="form" id="contactForm" novalidate data-reveal>
+        <div class="form__head">
+          <div>
+            <p class="eyebrow">Send a brief</p>
+            <h3>Tell me about the project.</h3>
+          </div>
+          <p class="form__hint" id="formHint">Replies usually within a day or two.</p>
+        </div>
+        <div class="form__grid">
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <fieldset class="field field--full">
+            <legend>I need help with</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="interest" value="Poster / graphic design"><span>Poster / graphic design</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="Website"><span>Website</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="Photography"><span>Photography</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="Video edit"><span>Video edit</span></label>
+              <label class="chip"><input type="checkbox" name="interest" value="Something else"><span>Something else</span></label>
+            </div>
+          </fieldset>
+          <label class="field field--full">
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="What are you making, and when do you need it?"></textarea>
+          </label>
+          <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </div>
+        <div class="form__foot">
+          <button class="btn btn--dark" type="submit" data-magnetic><span class="btn__label">Send message</span> <span aria-hidden="true">→</span></button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Prinseyy. All rights reserved.</span>
-    <span>Designed as a living portfolio · Dubai, UAE</span>
+<footer class="footer is-dark">
+  <div class="wrap footer__top">
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#posters">Posters</a><a href="#reallux">Real Lux</a><a href="#websites">Websites</a><a href="#frames">Frames</a><a href="#reel">Reel</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="footer__top-link" href="#top">Back to top ↑</a>
+  </div>
+  <div class="footer__mark" aria-hidden="true">Prins<em>eyy</em></div>
+  <div class="wrap footer__bottom">
+    <span>© <span id="year">2026</span> Prinseyy · All rights reserved</span>
+    <span>Dubai, UAE · <time data-clock>--:--</time> GST</span>
   </div>
 </footer>
 
-<noscript><p class="load-error">This portfolio needs JavaScript enabled to display its content.</p></noscript>
-<script src="script.js"></script>
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <div class="lb__top">
+    <span class="lb__count" id="lbCount">01 / 01</span>
+    <button class="lb__close" type="button" data-close autofocus>Close <span aria-hidden="true">✕</span></button>
+  </div>
+  <figure class="lb__stage">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb__nav lb__prev" type="button" aria-label="Previous image">←</button>
+  <button class="lb__nav lb__next" type="button" aria-label="Next image">→</button>
+</dialog>
+
+<!-- Video player -->
+<dialog class="player" id="player" aria-labelledby="playerTitle">
+  <div class="player__top">
+    <div><span class="player__n" id="playerNum">R.01</span><h3 id="playerTitle">Cut</h3></div>
+    <button class="lb__close" type="button" data-close>Close <span aria-hidden="true">✕</span></button>
+  </div>
+  <div class="player__screen" id="playerScreen"></div>
+  <div class="player__foot">
+    <span id="playerDesc"></span>
+    <a id="playerExt" href="#" target="_blank" rel="noopener" hidden>Open in Google Drive ↗</a>
+  </div>
+</dialog>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript><p class="noscript">Some sections of this portfolio (websites, frames and reel) need JavaScript to load.</p></noscript>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="js/content.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

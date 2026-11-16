@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prinseyy17.github.io/sitemap.xml
